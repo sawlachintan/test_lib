@@ -1,6 +1,6 @@
 {
     "python.testing.pytestArgs": [
-        "pckg_v4"
+        "tests"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true

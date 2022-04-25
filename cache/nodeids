@@ -1,0 +1,6 @@
+[
+  "src/msds/test_msds.py::test_bad_date_type",
+  "src/msds/test_msds.py::test_bad_file_type",
+  "src/msds/test_msds.py::test_wrong_index_substring",
+  "src/msds/test_msds.py::test_wrong_substring"
+]
