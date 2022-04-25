@@ -1,0 +1,11 @@
+name: Testing and Deploying Package
+
+# Specifying when should the workflow run
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  
+  workflow_dispath:
+ 
