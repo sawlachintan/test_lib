@@ -4,19 +4,19 @@ A python library for working with MSDS files.
 ## Installing
 
 ```bash
-pip install -i https://test.pypi.org/simple/ msds-package
+pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ msds
 ```
 
 ## Usage
 
 ```python
-from msds_package import msds
+import msds
 
 print(msds.current_date_and_time())
 ```
 OR
 ```python
-from msds_package.msds import current_date_and_time
+from msds import current_date_and_time
 
 print(current_date_and_time())
 ```

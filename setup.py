@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="msds",
-    version="0.0.5",
+    version="0.0.7",
     author="Soutick Saha, Chintan Sawla",
     author_email="soutick2010@gmail.com, sawlachintan@gmail.com",
     description="MSDS Package",
@@ -27,7 +27,7 @@ setup(
     python_requires=">=3.6",
     install_requires=[
         "pandas==1.2.4",
-        "pdfplumber",
+        "pdfplumber==0.6.0",
         "openpyxl",
     ],
 )
