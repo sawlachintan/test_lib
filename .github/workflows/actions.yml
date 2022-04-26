@@ -25,7 +25,7 @@ jobs:
       - name: Install and Upgrade pip, install other dependencies
         run: |
           python3 -m pip install --upgrade pip
-          python3 -m pip install setuptools wheel twine pytest build
+          python3 -m pip install setuptools wheel pytest
           pip install -r requirements.txt
           python3 setup.py install
           
@@ -35,9 +35,13 @@ jobs:
           pytest -q test_msds.py
           cd ..
       
-      - name: Build and Uplaod to PyPI
+      - name: Build package
         run: |
-          python3 build
+          python3 -m pip install --upgrade build
+          python3 -m build
+      - name: Upload to PyPI
+        run: |
+          python3 -m pip install --upgrade twine
           twine upload dist/*
         env:
           TWINE_USERNAME: $ {{ secrets.TWINE_USERNAME }}
