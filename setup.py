@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="msds",
-    version="0.0.7",
+    version="1.0.0",
     author="Soutick Saha, Chintan Sawla",
     author_email="soutick2010@gmail.com, sawlachintan@gmail.com",
     description="MSDS Package",

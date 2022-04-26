@@ -4,7 +4,7 @@ A python library for working with MSDS files.
 ## Installing
 
 ```bash
-pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ msds
+pip install msds
 ```
 
 ## Usage
