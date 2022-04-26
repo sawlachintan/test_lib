@@ -40,12 +40,10 @@ jobs:
           python3 -m pip install --upgrade build
           python3 -m build
       - name: Upload to PyPI
-        run: |
-          python3 -m pip install --upgrade twine
-          twine upload dist/*
-        env:
-          TWINE_USERNAME: $ {{ secrets.TWINE_USERNAME }}
-          TWINE_PASSWORD: $ {{ secrets.TWINE_PASSWORD }}
+        uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
+        with:
+          user: $ {{ secrets.TWINE_USERNAME }}
+          password: $ {{ secrets.TWINE_PASSWORD }}
         
         
         
